@@ -1,0 +1,257 @@
+body{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    align-items: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link{ /*agar link berwarna oranye tanpa underline */
+    color: #E96729;
+    text-decoration: none;
+}
+.logo{ /*mengatur ukuran logo/tulisan alibaba cloud di navbar*/
+    margin-left: 4rem;
+    height: 4rem;
+    margin-top: 0.15rem;
+}
+.right-side{ 
+    /* sisi kanan navbar */
+    display: flex;
+    margin-left: 70%;
+    margin-top: 1.5rem;
+    margin-bottom: none;
+    height: max-content;
+    color: white;
+}
+.homepage-button{
+    margin-left: 1rem;
+}
+.login-button{
+    margin-left: 1rem;
+}
+.earth-image{
+    height: 1.2rem;
+    margin-right: 0.5rem;
+}
+.arrow{
+    height: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.4rem;
+}
+.nav{
+    padding-top: 5px;
+    display: flex;
+    background-color: #373b3e;
+    height: 4rem;
+}
+.header{
+    padding-top: 5rem;
+    display: block;
+    width: 100%;
+    height: 10rem;
+    display: block;
+    text-align: center;
+    background-image:url(title.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.header-text{
+    font-size: 2.5rem;
+}
+.header-sub{
+    margin-top: 1rem;
+    
+}
+.orange-bar{
+    /* garis oranye diatas kartu utama */
+    margin-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: none;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: 4px;
+    width: 40.20rem;
+    background-color: #E96729;
+    z-index: 30;
+}
+.main-parent{
+    /* div yang mengelilingi kartu utama dan tulisan di kanan */
+    display:flex;
+}
+.main-card{
+    /* kartu utama */
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+    margin-top: none;
+    width: 30rem;
+    height: 35rem;
+    box-shadow: 0px 4px 4px 4px rgb(201, 201, 201);
+    z-index: 0;
+}
+#countries{
+    /* dropdown menu negara */
+    margin-bottom: 0.2rem;
+    width: 31.12rem;
+    height: 2.35rem;
+    padding-right: 5rem;
+    border-color: lightgray;
+    border-style:solid;
+    border-width: 1px;
+    padding-left: 0.75rem;
+}
+#email-form{
+    width: 30rem;
+    height: 2rem;
+    border-color: lightgray;
+    border-style:solid;
+    border-width: 1px;
+    padding-left: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+#email_error{
+    /* untuk error message yang akan dimunculkan menggunakan javascript */
+    margin-top: 2rem;
+}
+#password-form{
+    width: 30rem;
+    height: 2rem;
+    border-color: lightgray;
+    border-style:solid;
+    border-width: 1px;
+    padding-left: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+#pass_error{
+    margin-top: 2rem;
+}
+#confirm-password-form{
+    margin-top: 1rem;
+    width: 30rem;
+    height: 2rem;
+    border-color: lightgray;
+    border-style:solid;
+    border-width: 1px;
+    padding-left: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.check-div-parent{
+    /* div yang mengelilingi checkbox dan kata kata di kanannya */
+    margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    font-size: smaller;
+}
+#button-confirm{
+    /* tombol submit form */
+    margin-top: 2rem;
+    width: 30.5rem;
+    height: 2.35rem;
+    margin-bottom: 2rem;
+    background-color: #E96729;
+    color: white;
+    border: none;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#button-confirm:hover{
+    /* agar berubah warna ketika dihover */
+    background-color: #efab4e;
+}
+.sign-in-parent{
+    /* div tulisan "already a member? sign in" */
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: smaller;
+}
+#tac-check{
+    /* checkbox */
+    accent-color: #E96729;
+    margin-right: 0.5rem;
+}
+.info{
+    /* lambang i di sebelah "country/region will be used for ..." */
+    margin-right: 0.2rem;
+    padding-top: 1px;
+    width: 22px;
+    height: 15px;
+    margin-left: 3px;
+    background-color: #efab4e;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    cursor:default;
+}
+.info-country{
+    /* div berisi lambang i dan juga kata kata sebelahnya */
+    display:flex;
+    color: #efab4e;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+.footer{
+    height: 6rem;
+    background-color: #4b5054;
+    padding-top: 2rem;
+    padding-left: 3rem;
+}
+.footer-r1{
+    /* footer row pertama  */
+    display: flex;
+    color: white;
+    align-items: left;
+}
+.footer-r1 div, .footer-r2 div{
+    /* memberi spacing diantara elemen */
+    margin-right: 1rem;
+}
+.footer-r2{
+    margin-top: 0.5rem;
+    display: flex;
+    color:lightgrey;
+}
+.footer-r3{
+    margin-top: 0.5rem;
+    color:lightgrey;
+}
+.side-writing{
+    /* tulisan di kanan */
+    
+    position: absolute;
+    width: 25rem;
+    margin-left: calc(50% + 25rem);
+}
+.side-content{
+    /* tulisan di kanan, dibawah "account benefits" */
+    color: gray;
+    width: 20rem;
+}
+.side-title{
+    color: black !important;
+    font-weight: bold;
+    font-size: larger;
+    margin-bottom: 1rem;
+}
+.side-sub{
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color:black;
+}
+.sidelink{
+    /* agar link yang ada di kanan bisa tebal */
+    font-weight: bold !important;
+}
